@@ -1,7 +1,7 @@
 // KHQRPay for Node.js: the official SDK for the KHQRPay API (https://khqrpay.dev/docs).
 import { webcrypto, createHmac, timingSafeEqual } from "node:crypto";
 
-export const VERSION = "0.1.1";
+export const VERSION = "0.1.2";
 const DEFAULT_BASE_URL = "https://khqrpay.dev";
 
 export type Currency = "USD" | "KHR";

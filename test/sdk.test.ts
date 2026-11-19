@@ -36,7 +36,7 @@ describe("the API client", () => {
     expect(calls[0].url).toBe("https://khqrpay.dev/v1/payments");
     expect(calls[0].init.method).toBe("POST");
     expect(JSON.parse(String(calls[0].init.body))).toEqual(vectors.createRequest.body);
-    expect(h(calls[0])).toMatchObject({ Authorization: "Bearer kp_test_abc", "Content-Type": "application/json", "User-Agent": "khqrpay-node/0.1.1" });
+    expect(h(calls[0])).toMatchObject({ Authorization: "Bearer kp_test_abc", "Content-Type": "application/json", "User-Agent": "khqrpay-node/0.1.2" });
     expect(h(calls[0])["Idempotency-Key"]).toMatch(/^[0-9a-f-]{36}$/);
   });
 
